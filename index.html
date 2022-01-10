@@ -82,7 +82,11 @@
                 <textarea name="user-comment" class="form-comment" placeholder="Введите текст"></textarea>
             </label>
             <label class="condition-box">
-                <input type="checkbox" class="condition-checkbox">Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#" class="condition-link">Условия договора</a> 
+                <input type="checkbox" class="condition-checkbox">
+                <svg class="condition-box-icon">
+                    <use href="./images/icons.svg#check-icon"></use>
+                </svg>
+                Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#" class="condition-link">Условия договора</a> 
             </label>
             <button type="submit" class="form-submit-button">Отправить</button>
             </form>
@@ -372,15 +376,18 @@
                         </svg>
                     </a></li>
             </ul>
-           </div> 
+           </div>
+           
            <div class="mail-subscribe">
-               <h4 class="subscribe-headline">Подпишитесь на рассылку</h4>
-               <form class="subscribe-form">
-                   <label>E-mail
-                       <input type="email" name="subscribe-mail" class="subscribe-input">
-                   </label>
-                   <button type="submit">Подписаться</button>
-               </form>
+             <h4 class="subscribe-headline">Подпишитесь на рассылку</h4> 
+             <form class="subscribe-form">
+              <input type="email" name="subscribe-mail"  class="subscribe-input" placeholder="E-mail">
+              <button type="submit" class="subscribe-button">Подписаться
+                  <svg class="subscribe-button-icon">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+              </button>
+             </form>
            </div>
         </div>
     </footer>
